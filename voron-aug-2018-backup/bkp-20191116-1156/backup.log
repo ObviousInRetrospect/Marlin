@@ -1,0 +1,145 @@
+
+avrdude: Version 6.0.1, compiled on Dec 16 2013 at 17:26:24
+         Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+         Copyright (c) 2007-2009 Joerg Wunsch
+
+         System wide configuration file is "/usr/local/CrossPack-AVR-20131216/etc/avrdude.conf"
+         User configuration file is "/Users/gbr4/.avrduderc"
+         User configuration file does not exist or is not a regular file, skipping
+
+         Using Port                    : /dev/cu.usbmodem14501
+         Using Programmer              : stk500v2
+         Overriding Baud Rate          : 115200
+avrdude: stk500v2_getsync(): found AVRISP programmer
+         AVR Part                      : ATmega2560
+         Chip Erase delay              : 9000 us
+         PAGEL                         : PD7
+         BS2                           : PA0
+         RESET disposition             : dedicated
+         RETRY pulse                   : SCK
+         serial program mode           : yes
+         parallel program mode         : yes
+         Timeout                       : 200
+         StabDelay                     : 100
+         CmdexeDelay                   : 25
+         SyncLoops                     : 32
+         ByteDelay                     : 0
+         PollIndex                     : 3
+         PollValue                     : 0x53
+         Memory Detail                 :
+
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           eeprom        65    10     8    0 no       4096    8      0  9000  9000 0x00 0x00
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           flash         65    10   256    0 yes    262144  256   1024  4500  4500 0x00 0x00
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           lfuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           hfuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           efuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           lock           0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           calibration    0     0     0    0 no          1    0      0     0     0 0x00 0x00
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           signature      0     0     0    0 no          3    0      0     0     0 0x00 0x00
+
+         Programmer Type : STK500V2
+         Description     : Atmel STK500 Version 2.x firmware
+         Programmer Model: AVRISP
+         Hardware Version: 15
+         Firmware Version Master : 2.10
+         Vtarget         : 0.0 V
+         SCK period      : 0.1 us
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801
+avrdude: safemode read 1, lfuse value: ff
+avrdude: safemode read 2, lfuse value: ff
+avrdude: safemode read 3, lfuse value: ff
+avrdude: safemode: lfuse reads as FF
+avrdude: safemode read 1, hfuse value: d8
+avrdude: safemode read 2, hfuse value: d8
+avrdude: safemode read 3, hfuse value: d8
+avrdude: safemode: hfuse reads as D8
+avrdude: safemode read 1, efuse value: ff
+avrdude: safemode read 2, efuse value: ff
+avrdude: safemode read 3, efuse value: ff
+avrdude: safemode: efuse reads as FF
+avrdude: reading eeprom memory:
+
+Reading | ################################################## | 100% 4.19s
+
+avrdude: writing output file "eeprom.hex"
+avrdude: reading flash memory:
+
+Reading | ################################################## | 100% 33.54s
+
+avrdude: writing output file "flash.hex"
+avrdude: reading lfuse memory:
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: writing output file "lfuse.hex"
+avrdude: reading hfuse memory:
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: writing output file "hfuse.hex"
+avrdude: reading efuse memory:
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: writing output file "efuse.hex"
+avrdude: reading lock memory:
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: writing output file "lock.hex"
+avrdude: reading calibration memory:
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: writing output file "calibration.hex"
+avrdude: reading signature memory:
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: writing output file "signature.hex"
+
+avrdude: safemode read 1, lfuse value: ff
+avrdude: safemode read 2, lfuse value: ff
+avrdude: safemode read 3, lfuse value: ff
+avrdude: safemode: lfuse reads as FF
+avrdude: safemode read 1, hfuse value: d8
+avrdude: safemode read 2, hfuse value: d8
+avrdude: safemode read 3, hfuse value: d8
+avrdude: safemode: hfuse reads as D8
+avrdude: safemode read 1, efuse value: ff
+avrdude: safemode read 2, efuse value: ff
+avrdude: safemode read 3, efuse value: ff
+avrdude: safemode: efuse reads as FF
+avrdude: safemode: Fuses OK (H:FF, E:D8, L:FF)
+
+avrdude done.  Thank you.
+
